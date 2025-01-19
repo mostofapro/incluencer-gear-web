@@ -11,6 +11,8 @@
   --cart-description-color: rgb(120, 120, 133);
   --button-color: rgb(224, 44, 109);
   --button-text-color: rgb(255, 255, 255);
+  --dark-color: rgba(0, 0, 0, 0.87);
+  --rating-color: rgb(251, 130, 0);
 }
 *{
   margin: 0;
@@ -122,4 +124,117 @@
   font-size: 1.75rem;
   font-weight: 600;
   color: var(--primary-color);
+}
+
+.collection-lists{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80vw;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+.collection-item{
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+}
+
+.list-title{
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin: 1rem 0;
+}
+
+.list-price{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--dark-color);
+  margin: 6px, 0;
+}
+
+.list-rating{
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cart-description-color);
+}
+
+.list-description{
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cart-description-color);
+}
+
+.stars{
+  color: var(--rating-color);
+  font-size: .75rem;
+}
+
+.see-more{
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 79vw;
+}
+.see-more > a{
+  color: var(--button-color);
+}
+.see-more-icon{
+  color: var(--button-color);
+}
+
+/* Feature Item Style */
+.featured-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3rem auto;
+  width: 80vw;
+  align-items: center;
+}
+
+.featured-content{
+  width: 40vw;
+}
+
+.feature-content-title{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.feature-content-description{
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--cart-description-color);
+  margin: 1rem 0;
+}
+
+.feature-btn{
+  border-radius: 0;
+}
+
+/* Footer Area Style */
+.footer-area{
+  background-color: var(--secondary-color);
+  padding: 3rem;
+  text-align: center;
+  color: var(--button-text-color);
+}
+
+.footer-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-description{
+  font-size: .8rem;
+  color: rgb(217, 219, 225);
+  margin: 5px 0;
+}
+
+.footer-icon{
+  padding: 10px;
 }
