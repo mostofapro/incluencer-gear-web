@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root{
+  --primary-color: rgb(58, 58, 58);
+  --secondary-color: rgb(24, 25, 31);
+  --paragraph-color: rgb(108, 108, 108);
+  --cart-description-color: rgb(120, 120, 133);
+  --button-color: rgb(224, 44, 109);
+  --button-text-color: rgb(255, 255, 255);
+}
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Shared Styles */
+.section{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.display-flex{
+  display: flex;
+}
+
+.banner-title,
+.banner-description,
+.menu-title{
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Header Area Style */
+
+
+/* Navigation Style */
+.menu-bar{
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.menu-title{
+  font-size: 1.5rem;
+}
+.nav-items{
+  gap: 2.5rem;
+  }
+
+.menu-item{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.menu-item > a{
+  color: var(--primary-color);
+}
+
+/* Banner Area Style */
+.banner{
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.banner-content{
+  width: 45vw;
+}
+
+.banner-title{
+  font-size: 3rem;
+}
+
+.banner-description{
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.btn-primary{
+  padding: .7rem 1.5rem;
+  border-radius: 2.5rem;
+  border: none;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fa-solid{
+  color: var(--button-text-color);
+  margin-left: .5rem;
+}
+
+/* Company Section Styles */
+.companies{
+  width: 80vw;
+  margin: 2rem auto;
+  border-top: 1px solid #dddddd9f;
+  border-bottom: 1px solid #dddddd9f;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  padding: 1.5rem;
+}
+
+/* Collection Section Style */
+.collection-container{
+  margin: 4rem auto;
+}
+
+.collection-title{
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
