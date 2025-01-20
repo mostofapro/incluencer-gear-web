@@ -96,11 +96,14 @@
   cursor: pointer;
 }
 
-.fa-solid{
+.fa-arrow-right{
   color: var(--button-text-color);
   margin-left: .5rem;
 }
 
+.fa-magnifying-glass{
+  color: var(--dark-color);
+}
 /* Company Section Styles */
 .companies{
   width: 80vw;
@@ -188,8 +191,7 @@
 
 /* Feature Item Style */
 .featured-item{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
   margin: 3rem auto;
   width: 80vw;
   align-items: center;
@@ -237,4 +239,102 @@
 
 .footer-icon{
   padding: 10px;
+}
+
+/* Small Device Responsive */
+@media screen and (max-width: 576px) {
+  
+  .menu-bar,
+  .nav-items{
+    flex-direction: column;
+  }
+  
+  .menu-title{
+    margin-bottom: 1rem;
+  }
+  .menu-title{
+    font-size: 1.25rem;
+  }
+  .nav-items{
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  .companies{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .collection-lists{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .featured-item,
+  .banner{
+    flex-direction: column-reverse;
+  }
+
+  .banner{
+    margin-top: 0;
+  }
+  .banner-title{
+    font-size: 2rem;
+    /* width: 90vw; */
+  }
+  .banner-content{
+    width: 90vw;
+    text-align: center;
+  }
+  .banner-img{
+    width: 70%;
+    margin: 1rem auto;
+    background-image: url(../images/Circle\ design.svg);
+    background-position: center;
+    background-size: auto;
+  }
+  .companies > img{
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
+  }
+
+  .collection-container{
+    margin: 0 auto;
+  }
+
+  .collection-lists{
+    gap: 1rem;
+  }
+  .collection-item{
+    padding: 1rem;
+  }
+  .list-img{
+    width: 100%;
+  }
+
+  .see-more{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 50vw;
+  }
+
+  .feature-img{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+  }
+  .featured-content{
+    width: 90vw;
+    text-align: center;
+  }
+  .feature-content-title{
+    font-size: 1.5rem;
+  }
+
+  .footer-area{
+    width: 80vw;
+    padding: 2rem;
+  }
 }
