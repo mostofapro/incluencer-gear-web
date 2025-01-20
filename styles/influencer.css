@@ -85,6 +85,12 @@
   margin: 1rem 0;
 }
 
+.banner-img{
+    background-image: url(../images/Circle\ design.svg);
+    background-position: center;
+    background-size: 100%;
+  }
+
 .btn-primary{
   padding: .7rem 1.5rem;
   border-radius: 2.5rem;
@@ -280,7 +286,6 @@
   }
   .banner-title{
     font-size: 2rem;
-    /* width: 90vw; */
   }
   .banner-content{
     width: 90vw;
@@ -289,9 +294,6 @@
   .banner-img{
     width: 70%;
     margin: 1rem auto;
-    background-image: url(../images/Circle\ design.svg);
-    background-position: center;
-    background-size: auto;
   }
   .companies > img{
     width: 100%;
@@ -335,6 +337,75 @@
 
   .footer-area{
     width: 80vw;
+    padding: 2rem;
+  }
+}
+
+/* Medium Device Responsive */
+@media screen and (min-width: 576.01px) and (max-width: 992px){
+  .menu-bar{
+    flex-direction: column;
+  }
+  .menu-title{
+    margin-bottom: 1rem;
+  }
+
+  .featured-item,
+  .banner{
+    flex-direction: column-reverse;
+  }
+
+  .banner-title{
+    font-size: 2rem;
+  }
+  .banner-content{
+    width: 90vw;
+    text-align: center;
+  }
+  .banner-img{
+    width: 70%;
+    margin: 1rem auto;
+  }
+
+  .companies{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .collection-lists{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .collection-container{
+    margin: 0 auto;
+  }
+
+   .collection-item{
+    padding: 1rem;
+  }
+  .list-img{
+    width: 100%;
+  }
+
+  .see-more{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 65vw;
+  }
+
+  .feature-img{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+  }
+  .featured-content{
+    width: 90vw;
+    text-align: center;
+  }
+  .footer-area{
+    width: 100vw;
     padding: 2rem;
   }
 }
