@@ -88,6 +88,7 @@
 .banner-img{
     background-image: url(../images/Circle\ design.svg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
   }
 
@@ -113,7 +114,6 @@
 /* Company Section Styles */
 .companies{
   width: 80vw;
-  margin: 2rem auto;
   border-top: 1px solid #dddddd9f;
   border-bottom: 1px solid #dddddd9f;
   border-radius: 5px;
@@ -183,10 +183,7 @@
 .see-more{
   font-size: 1rem;
   font-weight: bold;
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 79vw;
+  text-align: right;
 }
 .see-more > a{
   color: var(--button-color);
@@ -315,13 +312,6 @@
     width: 100%;
   }
 
-  .see-more{
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 50vw;
-  }
-
   .feature-img{
     width: 100%;
     border-radius: 8px;
@@ -386,13 +376,6 @@
   }
   .list-img{
     width: 100%;
-  }
-
-  .see-more{
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 65vw;
   }
 
   .feature-img{
